@@ -6,3 +6,6 @@ https://app.diagrams.net strona ma mieć przyciski do : zmiany języka(angielski
 
 strona jest robiona za pomoca html + css + js + sqllite
 https://themes.vscode.one/ hex : #FFA500
+
+
+patchnote.md tam wszystkie zmiany na bieżąco zapisujemy kto co zrobił (każdy za siebie)
