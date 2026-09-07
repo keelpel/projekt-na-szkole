@@ -1,4 +1,4 @@
-### Strona z Quizami
+# Strona z Quizami
 
 Strona z quizem Kolorystyka: jasnoniebieski + biały na jasnym motywie, a na ciemnym motywie dać granatowy + szary Strona ma wiele quizów na różne tematy mianowicie: Informatyka, Historia, Biologia, Angielski, Internet, muzyka
 https://app.diagrams.net strona ma mieć przyciski do : zmiany języka(angielski, polski) oraz motywu(jasny, ciemny) wybór kategorii wyświetlanie pytań wybór odpowiedzi, mozliwosc robienia konta i pozniejsze zalogowanie sie na nie, przechowywanie wynikow uzytkownikow na bazach danych, mozliwosc powtarzania quizow, zliczanie procentow, losowe pytania za kazdym razem kiedy uzytkownikow robi quiz (30 pytan w bazie)
