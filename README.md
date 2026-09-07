@@ -2,10 +2,10 @@
 Prosta i lekka aplikacja webowa zawierająca możliwość rozwiązywania różnego rodzaju quizów.  
 
 ## Funkcje
-**Wybór Kategorii**: Uczestnicy mają wybór spośród 6 różnych kategorii: Informatyka, Internet, Historia, Biologia, Muzyka oraz Język Angielski.
-**Różne Formy Quizów**: Quizy klasyczne, na czas lub prawda fałsz.  
-**Możliwość Stworzenia Konta**: Uczestnicy otrzymują możliwość dodawania znajomych.  
-**Różne Formy Konkurencji**: Leaderboard, publiczne osiągnięcia oraz system zliczający procenty.  
+**Wybór Kategorii**: Uczestnicy mają wybór spośród 6 różnych kategorii: Informatyka, Internet, Historia, Biologia, Muzyka oraz Język Angielski i z czasem będzie się pojawiać więcej tematów.  \
+**Różne Formy Quizów**: Quizy klasyczne, na czas lub prawda fałsz.  \
+**Możliwość Stworzenia Konta**: Uczestnicy otrzymują możliwość dodawania znajomych.  \
+**Różne Formy Konkurencji**: Leaderboard, publiczne osiągnięcia oraz system zliczający procenty. \ 
 **Inne**: Możliwość zmiany języka, losowe generowanie pytań.
 
 ## Wygląd
