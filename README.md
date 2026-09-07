@@ -1,2 +1,2 @@
-# Strona Internetowa z quizami /
+# Strona Internetowa z quizami  
 ggg
