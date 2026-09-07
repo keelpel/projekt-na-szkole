@@ -1,5 +1,5 @@
 # Aplikacja Webowa z quizami  
-Prosta i lekka aplikacja webowa zawierająca możliwość rozwiązywania różnego rodzaju quizów.  
+***Prosta i lekka aplikacja webowa zawierająca możliwość rozwiązywania różnego rodzaju quizów.***  
 
 ## Funkcje
 **Wybór Kategorii**: Uczestnicy mają wybór spośród 6 różnych kategorii: Informatyka, Internet, Historia, Biologia, Muzyka oraz Język Angielski i z czasem będzie się pojawiać więcej tematów.  \
