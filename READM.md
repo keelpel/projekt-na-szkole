@@ -5,3 +5,4 @@ https://app.diagrams.net strona ma mieć przyciski do : zmiany języka(angielski
 <img width="767" height="576" alt="image" src="https://github.com/user-attachments/assets/964bf686-5c10-4d58-baf1-c3c1aae1a5aa" />
 
 strona jest robiona za pomoca html + css + js + sqllite
+https://themes.vscode.one/
