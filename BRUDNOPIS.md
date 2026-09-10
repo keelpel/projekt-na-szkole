@@ -10,3 +10,5 @@ https://themes.vscode.one/ hex : #FFA500
 
 patchnote.md tam wszystkie zmiany na bieżąco zapisujemy kto co zrobił (każdy za siebie)
 https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax#line-breaks
+
+font-family: "Inter", -apple-system, "Nunito", BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
