@@ -1,0 +1,65 @@
+Szczegolowe przypadki uzycia
+
+1. Quizz
+aktor: użytkownik
+cel: możliwość wybierania quizow i ich robienie
+
+Warunki wstępne
+. użytkownik ma dostep do wszystkich quizow na stronie internetowej
+. zalogowanie się nie jest wymagane lecz pozwala to na zapisanie wyniku
+. quizy maja rozne tematyki, oraz rozne kategorie
+
+
+Warunki końcowe:
+. użytkownik jest w stanie robic quizy, a pod koniec takowego jest pokazywany wynik
+
+glowny przebieg zdarzeń:
+1. uzytkownik otwiera strone
+2. użytkownik ma do wyboru wiele quizow o roznej tematyce i kategorii
+3. użytkownik wybiera quiz
+4. otwiera się nowa strona z 15 losowymi pytania z bazy danych
+5. pod koniec quizy jest liczony ogolny wynik użytkownika a następnie pokazywany na stronie
+6. wynik użytkownika jest zapisywany w bazie danych
+
+przebiegi alternatywne
+5a użytkownik może w każdej chwili wyjść ze strony w trakcie quizu - użytkownik będzie musial robic od nowa
+6a użytkownik może nie mieć konta - jego wynik nie będzie zapisywany w bazie danych
+6b użytkownik może zrobić jeden quiz kilka razy - jego wynik również będzie zapisywany kilka razy
+
+przebiegi wyjątkowe
+E1 blad polaczenia z baza danych - system syweitla komunikat o bledzie i sugeruje ponowna probe
+
+czestotliwosc uzycia: bardzo wysoka, jest to podstawowe użytkowanie strony
+
+2. Konta
+aktor: użytkownik
+cel: możliwość rejestracji kont oraz pozniejsza możliwość wylogowania się a potem zalogowania
+
+warunki wstępne:
+uzytkownik może stworzyć konto kompletnie za darmo
+użytkownik może wylogować się oraz zalogowac
+użytkownik może również usunąć konto jeśli chce
+
+warunki końcowe
+. wszystkie konta uzytkownikow sa zapisywane w bazie danych
+
+glowny przebieg zdarzeń
+1. jeżeli użytkownik nie ma konta, może takowe zalozyc
+2. zalozenie konta wymaga podanie email, nazwe użytkownika oraz haslo
+3. po rejestracji konta użytkownik może się wylogować
+4. po wylogowaniu, użytkownik może zalogowac się ponownie
+5. zalogowany użytkownik może usunąć swoje konto
+6. usuniecie konta sprawi ze nie będzie można się na nie zalogowac
+
+przebiegi alternatywne
+2a użytkownik może zalozyc kilka kont na jednym email - podczas robienia kolejnego konta na tym samym email będzie wyskakiwalo ze email już jest zajęty
+2b użytkownik może zrobić kilka kont z tym samym Nickiem - podczas zakładania konta z tym samym Nickiem będzie pisalo ze takowy już jest zajęty
+2c nie ma zadnych wymagan oraz ograniczen co do hasla - haslo będzie wymagalo minimalnie 12 znakow, minimalnie jednej dużej litery, jednej cyfry, jednego znaku specjalnego. Oraz będzie maksymalna ilość znakow dozwolona będzie 32
+4a użytkownik po wylogowaniu się może mieć problemy z zalogowaniem - użytkownik będzie mogl zresetować haslo, dzięki czemu nie będzie miał problemu z zalogowaniem
+
+przebiegi wyjątkowe
+
+
+
+
+
