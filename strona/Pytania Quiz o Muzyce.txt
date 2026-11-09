@@ -28,35 +28,34 @@
 28. Ile razy zespol The Beatles pozwal firme Apple - 3 razy (1 raz, 2 razy, 5 razy)
 29. kto jest uznawany za krola popu? - Michael Jackson (The Weeknd, Elvis Presley, Prince)
 30. W którym roku odbyla się pierwsza uroczysta ceremonia wręczenia nagrody Grammy - 1959 (1957, 1960, 1955)
-Pytania o Internet:
-Pytania o internecie:
-1. Kiedy powstal Youtube - 14 lutego 2005 roku
-2. Kiedy powstala Wikipedia - 15 stycznia 2001 roku
-3. Na czym polegalo Cicada 3301 - Było to ARG które posiadało bardzo skomplikowane zagadki
-4. Co to Creepypasta - fikcyjna opowieść która ma na celu przestraszyć czytelnika
-5. Co zmotywowało Terry Davis'a do napisania TempleOS? - Bóg przemówił do niego, aby ten stworzył swiątynię dla niego
-6. Jaki był pierwszy filmik na youtube - Me at the zoo
-7. Co oznacza skrot "NSFW" - Not safe for work
-8. Co oznacza skrot "ARG" - alternate reality game
-9. Kiedy nasza klasa została wyłączona - 27 lipca 2021
-10. Jaki jest najbardziej dislike'owany film na Youtube? - YouTube Rewind 2018: Everyone Controls Rewind
-11. Gdzie zapoczątkował koncept The Backrooms - 4chan
-12. Kiedy Wsparcie dla wtyczki Adobe Flash Player zostało zakończone? - 31 Grudnia 2020
-13. Rozwiń skrót "WWW" - World Wide Web
-14. W Którym kraju został nagrany filmik "11B-X-1371" - w Polsce
-15.
-16.
-17.
-18.
-19.
-20.
-21.
-22.
-23.
-24.
-25.
-26.
-27.
-28.
-29.
-30.
+Quiz o lore internetu:
+1. Kiedy powstal Youtube - 14 lutego 2005 roku (14 Lutego 2004, 5 Pazdziernika 2005, 7 Stycznia 2006)
+2. Kiedy powstala Wikipedia - 15 stycznia 2001 roku (22 Wrzesnia 2000, 6 Maja 1998, 20 Listopada 1995)
+3. Na czym polegalo Cicada 3301 - Było to ARG które posiadało bardzo skomplikowane zagadki (Tajna Organizacja Hakerska, Ukryta Gra z Deep Web, Rządowy program który miał na celu pozbyć się botów)
+4. Co to Creepypasta - fikcyjna opowieść która ma na celu przestraszyć czytelnika (Prawdziwa relacja z paranormalnymi aktywnościami, gatunek horroru, komputerowy wirus który ma na celu przestraszyć użytkownika)
+5. Co zmotywowało Terry Davis'a do napisania TempleOS? - Bóg przemówił do niego, aby ten stworzył swiątynię dla niego (Został do tego zmuszony, Zakład ze znajomym, Niemożliwy Challenge)
+6. Jaki był pierwszy filmik na youtube - Me at the zoo (test, Hello Youtube, Evolution of Dance)
+7. Co oznacza skrot "NSFW" - Not safe for work (never seen for web, not suitable for women, new shocking film warning)
+8. Co oznacza skrot "ARG" - alternate reality game (advanced role gaming, artificial reality generator, augmented reality graphics)
+9. Kiedy nasza klasa została wyłączona - 27 lipca 2021 (31 Czerwca 2022, 19 Sierpnia 2019, 1 Wrzesnia 2020)
+10. Jaki jest najbardziej dislike'owany film na Youtube? - YouTube Rewind 2018: Everyone Controls Rewind (Baby Shark, Baby - Justin Bieber, Gangnam Style)
+11. Gdzie zapoczątkował koncept The Backrooms - 4chan (Creepypasta.com, Tumblr, Reddit)
+12. Kiedy Wsparcie dla wtyczki Adobe Flash Player zostało zakończone? - 31 Grudnia 2020 (1 Stycznia 2021, 30 Czerwca 2019, 7 Kwietnia 2018)
+13. Rozwiń skrót "WWW" - World Wide Web (Whole Web World, Wide Window World, Wired Wireless World)
+14. W Którym kraju został nagrany filmik "11B-X-1371" - w Polsce (W USA, W Japonii, w Filipinach)
+15. Jaka była pierwsza strona gore w internecie - Rotten.com (Liveleak, Bestgore, runthegauntlet)
+16. Jaka koncowke miał filmik "Blankroomsoup"? - .avi (mp4, webm, mkv)
+17. Kto Stworzył animacje "Salad Fingers" - David Firth (Don Hertzfeldt, Kenn Navarro, Joel Veitch)
+18. Na jakiej stronie pierwotnie pojawił się Slenderman - Something awful (Reddit, Usenet, Myspace)
+19. Co głosi teoria martwego internetu? - Wiekszość aktywności w sieci to boty/AI (Ze internet przestanie działać po 2030, Ze wszystko przed 2000 zostało usunięte, Ze cały internet został stworzony przez AI)
+20. Który SCP był pierwszym stworzonym SCP ever? - SCP-173 (SCP-001, SCP-106, SCP-096)
+21. Na czym polega fenomen "Monkey Hate" - skrajna nienawiść do małp oraz czerpanie przyjemność z ich cierpienia (Panika wywołana wirusem, który rzekomo przenosi się z małp na ludzi, Internetowa mania zbierania i sprzedawania filmików z małpami, Ruch przeciwko trzymaniu małp w zoo)
+22. Skąd rzekomo ma pochodzić gra "Sad Satan" - z Deep Web (Z itch.io, z randomowego pendrive na ulicy, z discorda)
+23. Na jakiej stronie zaczęła się zagadka "Lake City Quiet Pills" - Reddit (4chan, Quora, 8chan)
+24. Co oznacza skrót "TOR"? - The Onion Router (The Online Relay, Total Onion Routing, Trusted Open Router)
+25. Co oznacza Rule34 - Jeżeli coś istnieje, istnieje wersja Porno tego (Jeżeli istnieje jakaś postać - istnieje jej odpowiednik z przeciwną płcią, Jeżeli coś istnieje - na pewno jest czyimś fetyszem, Jeżeli istnieje, da się na tym zagrać Bad Apple)
+26. Czym jest Efekt Mandeli - Zjawisko w którym to grupa osób dzieli fałszywe wspomnienie (Zjawisko w którym coś co wcześniej istniało ale nie ma po tym śladu, Zjawisko w którym to jednostka zapomina własne imię, Zjawisko w którym to osoba wierzy w coś, ale nie wierzy w to w pełni)
+27. O jakich objawach NIE mówi legenda o syndromie Lavender Town - Utrata Słuchu (ból głowy, krwawienie z nosa, bezsenność)
+28. Kto jest odpowiedzialny za serie internetowa "Petscop" - Tony Domenico (Kris Straub, Troy Wagner, Alex Kister)
+29. Do kogo należy kanał "webdriver torso" - Google (Mozilla, NASA, Microsoft)
+30. W którym roku według legendy były aktywne automaty z grą "Polybius"? - 1981 (1982, 1990, 1985)
