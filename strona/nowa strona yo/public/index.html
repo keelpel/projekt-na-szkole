@@ -1,0 +1,225 @@
+<!doctype html>
+<html lang="pl">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Najlepsze Quizy</title>
+    <link rel="stylesheet" href="motyw.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="motyw.js"></script>
+    <link rel="icon" href="logo.png">
+</head>
+<body>
+
+    <header>
+        <h1>Najlepsze Quizy</h1>
+
+        <img src="logo.png" alt="Logo" height="75" width="75">
+
+        <nav class="menu-uzytkownika" id="menu-uzytkownika">
+            <span id="status-uzytkownika">Gość</span>
+
+            <a id="link-logowanie" href="http://localhost:3000/logowanie.html" hidden>
+                Zaloguj się
+            </a>
+
+            <a id="link-rejestracja" href="http://localhost:3000/rejestracja.html" hidden>
+                Zarejestruj się
+            </a>
+        </nav>
+    </header>
+
+    <div class="content">
+        <main>
+            <section id="srodkowy1">
+
+                <div class="linkdoquizu">
+                    <img src="muzyka.jpg" alt="Muzyka">
+                    <div class="info">
+                        <b>Quiz o muzyce</b>
+                        <a href="http://localhost:3000/quiz.html?kategoria=muzyka">
+                            Otwórz quiz
+                        </a>
+                        <p>
+                            Quiz o gatunkach, wykonawcach i albumach muzycznych.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="linkdoquizu">
+                    <img src="iceberg.jpg" alt="iceberg">
+                    <div class="info">
+                        <b>Quiz o Zakątkach Internetu</b>
+                        <a href="http://localhost:3000/quiz.html?kategoria=informatyka">
+                            Otwórz quiz
+                        </a>
+                        <p>
+                            Quiz ten obejmuje podstawową wiedzę z internetu, lecz również testuje mniej znane rzeczy
+                        </p>
+                    </div>
+                </div>
+
+                <div class="linkdoquizu">
+                    <img src="history.jpg.webp" alt="Historia">
+                    <div class="info">
+                        <b>Quiz o historii</b>
+                        <a href="http://localhost:3000/quiz.html?kategoria=historia">
+                            Otwórz quiz
+                        </a>
+                        <p>
+                            Quiz o epokach, wydarzeniach i ważnych postaciach historycznych.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="linkdoquizu">
+                    <img src="crime.jpg" alt="crime">
+                    <div class="info">
+                        <b>Quiz o True Crime</b>
+                        <a href="http://localhost:3000/quiz.html?kategoria=biologia">
+                            Otwórz quiz
+                        </a>
+                        <p>
+                            Quiz o tematyce True Crime, który przetestuje twoją wiedzę na temat spraw kryminalnych
+                        </p>
+                    </div>
+                </div>
+
+                <div class="linkdoquizu">
+                    <img src="mango.jpg" alt="Warhammer">
+                    <div class="info">
+                        <b>Quiz o Warhammerze</b>
+                        <a href="http://localhost:3000/quiz.html?kategoria=warhammer">
+                            Otwórz quiz
+                        </a>
+                        <p>
+                            Quiz dotyczący uniwersum Warhammer 40K.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="linkdoquizu">
+                    <img src="touhou.png" alt="touhou">
+                    <div class="info">
+                        <b>Quiz o Touhou</b>
+                        <a href="http://localhost:3000/quiz.html?kategoria=internet">
+                            Otwórz quiz
+                        </a>
+                        <p>
+                            Quiz o popularnej serii "Touhou", testuje ogólną wiedzę o serii, lore, fandom oraz wiele więcej!
+                        </p>
+                    </div>
+                </div>
+
+            </section>
+        </main>
+
+        <nav>
+            <section id="srodkowy2">
+                <h4>Geneza strony</h4>
+                <p>
+                    Jest to strona internetowa zrobiona i stale rozwijana przez dwóch znajomych.
+                    Oferuje quizy, opcje społecznościowe oraz możliwość przechowywania wyników.
+                </p>
+            </section>
+
+            <section id="srodkowy3">
+    <h4>Change Log</h4>
+
+    <article class="zmiana">
+        <h5>Wersja 1.1.0</h5>
+        <p>
+            Pierwsza wersja strony z podstawowymi funkcjami.
+        </p>
+    </article>
+
+    <article class="zmiana">
+        <h5>Wersja 1.2.0</h5>
+        <p>
+            Dodano quiz muzyczny z 15 losowymi pytaniami
+            oraz czterema odpowiedziami do każdego pytania.
+        </p>
+    </article>
+
+    <article class="zmiana">
+        <h5>Wersja 1.3.0</h5>
+        <p>
+            Dodano rejestrację użytkowników, hashowanie haseł
+            oraz tabelę użytkowników w bazie danych.
+        </p>
+    </article>
+
+    <article class="zmiana">
+        <h5>Wersja 1.4.0</h5>
+        <p>
+            Dodano logowanie, sesje użytkowników
+            oraz możliwość wylogowania.
+        </p>
+    </article>
+
+    <article class="zmiana">
+        <h5>Wersja 1.5.0</h5>
+        <p>
+            Dodano rozpoznawanie statusu użytkownika:
+            Gość albo zalogowany użytkownik.
+        </p>
+    </article>
+
+    <article class="zmiana">
+        <h5>Wersja 1.6.0</h5>
+        <p>
+            Dodano zapisywanie wyników quizów
+            tylko dla zalogowanych użytkowników.
+        </p>
+    </article>
+
+    <article class="zmiana">
+        <h5>Wersja 1.7.0</h5>
+        <p>
+            Dodano profil użytkownika z historią
+            zapisanych wyników.
+        </p>
+    </article>
+
+    <article class="zmiana">
+        <h5>Wersja 1.8.0</h5>
+        <p>
+            Dodano leaderboard z wynikami użytkowników.
+        </p>
+    </article>
+
+    <article class="zmiana">
+        <h5>Wersja 1.9.0</h5>
+        <p>
+            Dodano kategorię informatyka oraz możliwość
+            obsługi wielu tabel quizów przez jeden endpoint API.
+        </p>
+    </article>
+
+    <article class="zmiana">
+        <h5>Wersja 2.0.0</h5>
+        <p>
+            Uporządkowano listę kategorii i przygotowano system
+            umożliwiający łatwe dodawanie kolejnych quizów.
+        </p>
+    </article>
+    <article class="zmiana">
+        <h5>Wersja 2.1.0</h5>
+        <p>
+            Zmieniono niektóre quizy
+            Dodano ciemny motyw
+            Usunięto bug w którym to zalogowany użytkownik nadal widział przyciski do zalogowania się oraz rejestracji
+        </p>
+    </article>
+</section>
+
+        </nav>
+    </div>
+
+    <footer>
+        <p>numer sałatki: 666</p>
+    </footer>
+
+    <script src="uzytkownik.js"></script>
+</body>
+</html>

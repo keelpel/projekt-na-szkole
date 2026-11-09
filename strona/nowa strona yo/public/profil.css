@@ -1,0 +1,140 @@
+/* profil.css – styl strony profilu (profil.html) */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: var(--tlo-glowne);
+    font-family: "Inter", -apple-system, "Nunito", BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    color: var(--tekst);
+}
+
+[hidden] {
+    display: none !important;
+}
+
+/* ---------- Karta ---------- */
+
+.kontener.profil {
+    max-width: 700px;
+    margin: 40px auto;
+    padding: 30px;
+    background: var(--karta);
+    border: 1px solid var(--obramowanie);
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+.profil h1 {
+    margin: 0 0 20px;
+    text-align: center;
+    text-shadow: 2px 3px 5px rgba(0, 0, 0, 0.2);
+}
+
+.profil h2 {
+    margin: 25px 0 12px;
+    padding-bottom: 8px;
+    font-size: 20px;
+    border-bottom: 2px solid var(--tlo-glowne);
+}
+
+.profil p {
+    line-height: 1.6;
+}
+
+#komunikat {
+    text-align: center;
+    font-weight: 600;
+}
+
+/* ---------- Dane użytkownika ---------- */
+
+#dane-profilu p {
+    margin: 8px 0;
+    padding: 10px 14px;
+    background: var(--tlo-pole);
+    border-radius: 10px;
+}
+
+/* ---------- Historia wyników ---------- */
+
+#brak-wynikow {
+    padding: 16px;
+    text-align: center;
+    background: var(--tlo-pole);
+    border-radius: 10px;
+}
+
+.tabela-wynikow {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    background: var(--karta);
+    border: 1px solid var(--obramowanie);
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+th,
+td {
+    padding: 12px 14px;
+    text-align: left;
+}
+
+thead th {
+    background: var(--akcent);
+    color: #FFFFFF;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+tbody td {
+    border-top: 1px solid var(--obramowanie);
+}
+
+tbody tr {
+    transition: background 0.2s ease;
+}
+
+tbody tr:nth-child(even) {
+    background: var(--tlo-pole);
+}
+
+tbody tr:hover {
+    background: var(--tlo-hover);
+}
+
+/* ---------- Link powrotu ---------- */
+
+.profil a {
+    color: var(--link);
+    font-weight: 600;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.profil a:hover {
+    color: var(--tekst);
+    text-decoration: underline;
+}
+
+/* ---------- Telefony ---------- */
+
+@media (max-width: 600px) {
+    .kontener.profil {
+        margin: 20px 12px;
+        padding: 20px 16px;
+    }
+
+    th,
+    td {
+        padding: 10px;
+        font-size: 14px;
+    }
+}

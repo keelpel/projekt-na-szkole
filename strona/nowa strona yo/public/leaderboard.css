@@ -1,0 +1,163 @@
+/* leaderboard.css – styl strony rankingu (leaderboard.html) */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: var(--tlo-glowne);
+    font-family: "Inter", -apple-system, "Nunito", BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    color: var(--tekst);
+}
+
+/* ---------- Karta ---------- */
+
+.kontener {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 30px;
+    background: var(--karta);
+    border: 1px solid var(--obramowanie);
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+.kontener h1 {
+    margin: 0 0 20px;
+    text-align: center;
+    text-shadow: 2px 3px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* ---------- Wybór kategorii ---------- */
+
+label[for="kategoria"] {
+    margin-right: 8px;
+    font-weight: 600;
+}
+
+#kategoria {
+    min-width: 180px;
+    padding: 10px 14px;
+    font-family: inherit;
+    font-size: 15px;
+    color: var(--tekst);
+    background: var(--tlo-pole);
+    border: 2px solid var(--obramowanie);
+    border-radius: 10px;
+    cursor: pointer;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+#kategoria:focus {
+    outline: none;
+    border-color: var(--akcent);
+    box-shadow: 0 0 0 3px rgba(59, 155, 232, 0.2);
+}
+
+#komunikat {
+    margin: 15px 0;
+    text-align: center;
+    font-weight: 600;
+}
+
+#komunikat:empty {
+    display: none;
+}
+
+/* ---------- Tabela rankingu ---------- */
+
+table {
+    width: 100%;
+    margin-top: 15px;
+    border-collapse: separate;
+    border-spacing: 0;
+    background: var(--karta);
+    border: 1px solid var(--obramowanie);
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+th,
+td {
+    padding: 12px 14px;
+    text-align: left;
+}
+
+thead th {
+    background: var(--akcent);
+    color: #FFFFFF;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+tbody td {
+    border-top: 1px solid var(--obramowanie);
+}
+
+tbody tr {
+    transition: background 0.2s ease;
+}
+
+tbody tr:nth-child(even) {
+    background: var(--tlo-pole);
+}
+
+tbody tr:hover {
+    background: var(--tlo-hover);
+}
+
+/* Podium: złoto, srebro, brąz */
+#ranking tr:nth-child(1) {
+    background: var(--zloto);
+    font-weight: 600;
+}
+
+#ranking tr:nth-child(2) {
+    background: var(--srebro);
+    font-weight: 600;
+}
+
+#ranking tr:nth-child(3) {
+    background: var(--braz);
+    font-weight: 600;
+}
+
+/* ---------- Link powrotu ---------- */
+
+.kontener a {
+    color: var(--link);
+    font-weight: 600;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.kontener a:hover {
+    color: var(--tekst);
+    text-decoration: underline;
+}
+
+/* ---------- Telefony ---------- */
+
+@media (max-width: 600px) {
+    .kontener {
+        margin: 20px 12px;
+        padding: 20px 16px;
+    }
+
+    table {
+        display: block;
+        overflow-x: auto;
+    }
+
+    th,
+    td {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    #kategoria {
+        width: 100%;
+        margin-top: 6px;
+    }
+}

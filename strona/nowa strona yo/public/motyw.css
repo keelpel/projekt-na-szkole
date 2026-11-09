@@ -1,0 +1,56 @@
+:root {
+    --tlo-strony:   #F4F9FC;
+    --tlo-glowne:   #EAF6FF;
+    --karta:        #FFFFFF;
+    --tlo-pole:     #F4F9FC;
+    --tlo-hover:    #DCEEFB;
+    --tlo-wybrana:  #D2E9FF;
+    --obramowanie:  #e1e8f0;
+    --tekst:        #172033;
+    --akcent:       #3B9BE8;
+    --akcent-hover: #2A86D0;
+    --link:         #2A86D0;
+    --poprawna-tlo: #D9F7E3;
+    --poprawna:     #3DBE6C;
+    --zla-tlo:      #FDE0E0;
+    --zla:          #E55353;
+}
+
+[data-theme="dark"] {
+    color-scheme: dark;
+    --tlo-strony:   #1B1826;
+    --tlo-glowne:   #231F33;
+    --karta:        #2D2840;
+    --tlo-pole:     #26213A;
+    --tlo-hover:    #3A3358;
+    --tlo-wybrana:  #433A6B;
+    --obramowanie:  #3D3757;
+    --tekst:        #ECE9F7;
+    --akcent:       #8B6CF0;
+    --akcent-hover: #A78BFA;
+    --link:         #B9A3FF;
+    --poprawna-tlo: #1F3D2D;
+    --poprawna:     #4ADE80;
+    --zla-tlo:      #4A2430;
+    --zla:          #F87171;
+}
+
+.przycisk-motywu {
+    position: fixed;
+    top: 15px;
+    right: 15px;
+    z-index: 1000;
+    width: 44px;
+    height: 44px;
+    font-size: 20px;
+    background: var(--karta);
+    border: 2px solid var(--obramowanie);
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    transition: transform 0.2s ease;
+}
+
+.przycisk-motywu:hover {
+    transform: scale(1.1);
+}

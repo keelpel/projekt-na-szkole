@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mój profil</title>
+    <link rel="stylesheet" href="motyw.css">
+    <link rel="stylesheet" href="profil.css">
+    <script src="motyw.js"></script>
+</head>
+<body>
+
+    <main class="kontener profil">
+        <h1>Mój profil</h1>
+
+        <p id="komunikat">Ładowanie profilu...</p>
+
+        <section id="dane-profilu" hidden>
+            <h2>Dane użytkownika</h2>
+
+            <p>
+                <strong>Nazwa użytkownika:</strong>
+                <span id="nazwa-uzytkownika"></span>
+            </p>
+
+            <p>
+                <strong>Email:</strong>
+                <span id="email-uzytkownika"></span>
+            </p>
+
+            <p>
+                <strong>Konto utworzone:</strong>
+                <span id="data-utworzenia"></span>
+            </p>
+        </section>
+
+        <section id="historia-wynikow" hidden>
+            <h2>Historia wyników</h2>
+
+            <p id="brak-wynikow" hidden>
+                Nie masz jeszcze zapisanych wyników.
+            </p>
+
+            <div class="tabela-wynikow">
+                <table id="tabela-wynikow">
+                    <thead>
+                        <tr>
+                            <th>Kategoria</th>
+                            <th>Wynik</th>
+                            <th>Data</th>
+                        </tr>
+                    </thead>
+                    <tbody id="wyniki"></tbody>
+                </table>
+            </div>
+        </section>
+
+        <p>
+            <a href="http://localhost:3000/index.html">
+                Powrót na stronę główną
+            </a>
+        </p>
+    </main>
+
+    <script src="profil.js"></script>
+</body>
+</html>
