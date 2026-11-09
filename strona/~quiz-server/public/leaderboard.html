@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leaderboard</title>
+    <link rel="stylesheet" href="styles2.css">
+</head>
+<body>
+
+    <main class="kontener">
+        <h1>Leaderboard</h1>
+
+        <label for="kategoria">
+            Kategoria:
+        </label>
+
+        <select id="kategoria">
+            <option value="">Wszystkie</option>
+            <option value="muzyka">Muzyka</option>
+            <option value="informatyka">Informatyka</option>
+            <option value="historia">Historia</option>
+            <option value="biologia">Biologia</option>
+            <option value="warhammer">Warhammer</option>
+            <option value="internet">Internet</option>
+        </select>
+
+        <p id="komunikat">Ładowanie rankingu...</p>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Miejsce</th>
+                    <th>Użytkownik</th>
+                    <th>Kategoria</th>
+                    <th>Wynik</th>
+                    <th>Data</th>
+                </tr>
+            </thead>
+
+            <tbody id="ranking"></tbody>
+        </table>
+
+        <p>
+            <a href="index.html">
+                Powrót
+            </a>
+        </p>
+    </main>
+
+    <script src="leaderboard.js"></script>
+</body>
+</html>

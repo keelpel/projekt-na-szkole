@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Logowanie</title>
+
+    <link rel="stylesheet" href="styles2.css">
+</head>
+<body>
+
+    <main class="formularz">
+        <h1>Logowanie</h1>
+
+        <form id="formularz-logowania">
+            <label for="email">
+                Adres email
+            </label>
+
+            <input
+                type="email"
+                id="email"
+                name="email"
+                autocomplete="email"
+                required
+            >
+
+            <label for="haslo">
+                Hasło
+            </label>
+
+            <input
+                type="password"
+                id="haslo"
+                name="haslo"
+                autocomplete="current-password"
+                required
+            >
+
+            <button type="submit">
+                Zaloguj się
+            </button>
+        </form>
+
+        <p id="komunikat"></p>
+
+        <p>
+            Nie masz konta?
+            <a href="rejestracja.html">
+                Zarejestruj się
+            </a>
+        </p>
+
+        <p>
+            <a href="index.html">
+                Powrót na stronę główną
+            </a>
+        </p>
+    </main>
+
+    <script src="logowanie.js"></script>
+</body>
+</html>

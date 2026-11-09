@@ -1,0 +1,97 @@
+
+*
+{
+    box-sizing: border-box;
+}
+body
+{
+    background: #F4F9FC;
+    font-family: "Inter", -apple-system, "Nunito", BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    color: #172033;
+}
+header
+{
+    background-color: #FFFFFF;
+    height: 100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+header h1 {
+    margin: 0;
+    text-shadow: 2px 3px 5px rgba(0, 0, 0, 0.25);
+}
+header img {
+    filter: drop-shadow(2px 3px 5px rgba(0, 0, 0, 0.25));
+}
+main
+{
+    background-color: #EAF6FF;
+    width: 85%;
+    padding: 20px;
+}
+nav
+{
+    background-color: #FFFFFF;
+    width: 15%;
+    padding: 20px;
+}
+body > main,
+body > nav {
+    float: left;
+}
+footer
+{
+    background: #FAFFFF;
+    height: 50px;
+    width: 100%;
+}
+.content {
+    display: flex;
+    min-height: 500px;
+}
+.linkdoquizu {
+    background: #fff;
+    border: 1px solid #e1e8f0;
+    border-radius: 12px;
+
+    width: 70%;
+    padding: 18px 24px;
+
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.linkdoquizu:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 14px rgba(0, 0, 0, 0.1);
+}
+
+.linkdoquizu img {
+    width: 75px;
+    height: 75px;
+    object-fit: cover;
+    border-radius: 8px;
+    flex-shrink: 0;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.info b {
+    font-size: 18px;
+}
+
+.info p {
+    margin: 0;
+}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rejestracja</title>
+    <link rel="stylesheet" href="styles2.css">
+</head>
+<body>
+
+    <main class="formularz">
+        <h1>Rejestracja</h1>
+
+        <form id="formularz-rejestracji">
+            <label for="nazwa">Nazwa użytkownika</label>
+            <input
+                id="nazwa"
+                name="nazwa"
+                type="text"
+                minlength="3"
+                required
+            >
+
+            <label for="email">Adres email</label>
+            <input
+                id="email"
+                name="email"
+                type="email"
+                required
+            >
+
+            <label for="haslo">Hasło</label>
+            <input
+                id="haslo"
+                name="haslo"
+                type="password"
+                minlength="6"
+                required
+            >
+
+            <button type="submit">
+                Zarejestruj się
+            </button>
+        </form>
+
+        <p id="komunikat"></p>
+
+        <p>
+            Masz już konto?
+            <a href="logowanie.html">Zaloguj się</a>
+        </p>
+
+        <a href="index.html">
+            Powrót
+        </a>
+    </main>
+
+    <script src="rejestracja.js"></script>
+</body>
+</html>

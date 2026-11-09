@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Quiz</title>
+
+    <link rel="stylesheet" href="styles2.css">
+</head>
+<body class="strona">
+
+    <header class="naglowek">
+        <h1 class="tytul-strony">Najlepsze Quizy</h1>
+
+        <img
+            class="logo"
+            src="logo.jpg"
+            alt="Logo strony"
+        >
+    </header>
+
+    <main class="zawartosc">
+
+        <section id="quiz" class="quiz">
+
+            <h2 id="nazwa-quizu" class="tytul-quizu">
+                Ładowanie quizu...
+            </h2>
+
+            <!-- Tutaj JavaScript wstawi 15 bloków pytań -->
+            <div id="lista-pytan" class="pytania">
+                Ładowanie pytań...
+            </div>
+
+            <button
+                id="sprawdz"
+                class="przycisk-sprawdz"
+                type="button"
+                disabled
+            >
+                Sprawdź wynik
+            </button>
+
+            <h2 id="wynik" class="wynik"></h2>
+
+        </section>
+
+    </main>
+
+    <footer class="stopka">
+        <a class="link-powrot" href="index.html">
+            Powrót do strony głównej
+        </a>
+    </footer>
+
+    <script src="quiz.js"></script>
+</body>
+</html>
