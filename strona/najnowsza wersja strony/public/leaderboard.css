@@ -1,0 +1,447 @@
+/* leaderboard.css – styl strony rankingu (leaderboard.html) */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: var(--tlo-glowne);
+    font-family: "Inter", -apple-system, "Nunito", BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    color: var(--tekst);
+}
+
+[hidden] {
+    display: none !important;
+}
+
+/* ---------- Karta ---------- */
+
+.kontener {
+    max-width: 920px;
+    margin: 40px auto;
+    padding: 30px;
+    background: var(--karta);
+    border: 1px solid var(--obramowanie);
+    border-radius: 16px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+.kontener h1 {
+    margin: 0 0 20px;
+    text-align: center;
+    text-shadow: 2px 3px 5px rgba(0, 0, 0, 0.2);
+}
+
+#komunikat {
+    margin: 20px 0;
+    text-align: center;
+    font-weight: 600;
+}
+
+/* ---------- Filtry kategorii ---------- */
+
+.filtry {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+    margin-bottom: 24px;
+}
+
+.filtr {
+    padding: 7px 14px;
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--link);
+    background: transparent;
+    border: 2px solid var(--obramowanie);
+    border-radius: 999px;
+    cursor: pointer;
+    transition: background 0.2s ease, color 0.2s ease,
+                border-color 0.2s ease, transform 0.2s ease;
+}
+
+.filtr:hover {
+    border-color: var(--akcent);
+    transform: translateY(-1px);
+}
+
+.filtr.aktywny {
+    color: #FFFFFF;
+    background: var(--akcent);
+    border-color: var(--akcent);
+}
+
+/* ---------- Twoje miejsce ---------- */
+
+.twoje-miejsce {
+    margin: 0 0 22px;
+    padding: 10px 16px;
+    text-align: center;
+    font-weight: 600;
+    background: var(--tlo-pole);
+    border: 2px solid var(--akcent);
+    border-radius: 12px;
+}
+
+/* ---------- Avatary ---------- */
+
+.mini-avatar {
+    flex-shrink: 0;
+    width: 36px;
+    height: 36px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    font-weight: 700;
+    color: #FFFFFF;
+    background: linear-gradient(135deg, var(--akcent), var(--akcent-hover));
+    border-radius: 50%;
+    user-select: none;
+}
+
+.mini-avatar img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.mini-avatar.duzy {
+    width: 64px;
+    height: 64px;
+    font-size: 26px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.25);
+}
+
+/* ---------- Podium ---------- */
+
+.podium {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    gap: 14px;
+    margin: 6px 0 26px;
+}
+
+.podium-karta {
+    flex: 1;
+    max-width: 250px;
+    min-width: 0;
+    padding: 16px 10px;
+    text-align: center;
+    background: var(--tlo-pole);
+    border: 2px solid var(--obramowanie);
+    border-radius: 18px;
+    animation: wskakuje 0.5s ease both;
+    animation-delay: calc(var(--i) * 120ms);
+}
+
+.podium-karta.miejsce-1 {
+    order: 2;
+    padding-top: 26px;
+    padding-bottom: 22px;
+    background: var(--zloto);
+    border-color: #D4A017;
+}
+
+.podium-karta.miejsce-2 {
+    order: 1;
+    background: var(--srebro);
+    border-color: #9AA3B2;
+}
+
+.podium-karta.miejsce-3 {
+    order: 3;
+    background: var(--braz);
+    border-color: #C57B4A;
+}
+
+.podium-karta.miejsce-1 .mini-avatar.duzy {
+    width: 80px;
+    height: 80px;
+    font-size: 32px;
+}
+
+.podium-medal {
+    display: block;
+    margin-bottom: 6px;
+    font-size: 30px;
+    line-height: 1;
+}
+
+.podium-karta .mini-avatar {
+    margin: 0 auto 8px;
+}
+
+.podium-nick {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: 700;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.podium-wynik {
+    display: block;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.podium-kat {
+    display: block;
+    margin-top: 4px;
+    font-size: 13px;
+}
+
+.podium-data {
+    display: block;
+    margin-top: 4px;
+    font-size: 11px;
+    opacity: 0.7;
+}
+
+/* ---------- Pozostałe miejsca ---------- */
+
+.lista {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.wiersz {
+    display: grid;
+    grid-template-columns: 40px minmax(0, 2fr) minmax(0, 1.3fr) minmax(0, 1.7fr) auto;
+    align-items: center;
+    gap: 12px;
+    padding: 10px 14px;
+    background: var(--tlo-pole);
+    border: 1px solid var(--obramowanie);
+    border-radius: 14px;
+    transition: transform 0.2s ease, background 0.2s ease;
+    animation: wjezdza 0.4s ease both;
+    animation-delay: calc(var(--i) * 40ms);
+}
+
+.wiersz:hover {
+    background: var(--tlo-hover);
+    transform: translateX(4px);
+}
+
+.wiersz.ja {
+    border: 2px solid var(--akcent);
+    box-shadow: 0 0 0 3px rgba(139, 108, 240, 0.2);
+}
+
+.miejsce {
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    background: var(--karta);
+    border: 1px solid var(--obramowanie);
+    border-radius: 50%;
+}
+
+.gracz {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    min-width: 0;
+}
+
+.nick {
+    min-width: 0;
+    font-weight: 600;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.znacznik-ja {
+    flex-shrink: 0;
+    padding: 1px 8px;
+    font-size: 11px;
+    font-weight: 700;
+    color: #FFFFFF;
+    background: var(--akcent);
+    border-radius: 999px;
+}
+
+.kat {
+    font-size: 14px;
+}
+
+.wynik-blok {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.liczba {
+    min-width: 44px;
+    font-weight: 700;
+}
+
+.pasek {
+    flex: 1;
+    height: 8px;
+    overflow: hidden;
+    background: var(--tlo-hover);
+    border-radius: 999px;
+}
+
+.pasek > i {
+    display: block;
+    height: 100%;
+    background: linear-gradient(90deg, var(--akcent), var(--akcent-hover));
+    border-radius: 999px;
+}
+
+.pigulka {
+    display: inline-block;
+    padding: 2px 10px;
+    font-size: 12px;
+    font-weight: 700;
+    border-radius: 999px;
+}
+
+.pigulka.wysoki {
+    color: var(--poprawna);
+    background: var(--poprawna-tlo);
+}
+
+.pigulka.sredni {
+    color: var(--tekst);
+    background: var(--zloto);
+}
+
+.pigulka.niski {
+    color: var(--zla);
+    background: var(--zla-tlo);
+}
+
+.data {
+    font-size: 12px;
+    line-height: 1.4;
+    text-align: right;
+    opacity: 0.75;
+    white-space: nowrap;
+}
+
+.data small {
+    display: block;
+    font-size: 11px;
+    opacity: 0.8;
+}
+
+/* ---------- Link powrotu ---------- */
+
+.powrot {
+    margin: 26px 0 0;
+}
+
+.kontener a {
+    color: var(--link);
+    font-weight: 600;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.kontener a:hover {
+    color: var(--tekst);
+    text-decoration: underline;
+}
+
+/* ---------- Animacje ---------- */
+
+@keyframes wskakuje {
+    from {
+        opacity: 0;
+        transform: translateY(16px) scale(0.94);
+    }
+    to {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+@keyframes wjezdza {
+    from {
+        opacity: 0;
+        transform: translateX(-14px);
+    }
+    to {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .podium-karta,
+    .wiersz {
+        animation: none;
+    }
+}
+
+/* ---------- Telefony ---------- */
+
+@media (max-width: 700px) {
+    .kontener {
+        margin: 20px 12px;
+        padding: 20px 14px;
+    }
+
+    .podium {
+        gap: 8px;
+    }
+
+    .podium-karta {
+        padding: 12px 6px;
+    }
+
+    .podium-karta.miejsce-1 {
+        padding-top: 18px;
+    }
+
+    .podium-nick {
+        font-size: 13px;
+    }
+
+    .podium-wynik {
+        font-size: 18px;
+    }
+
+    .mini-avatar.duzy,
+    .podium-karta.miejsce-1 .mini-avatar.duzy {
+        width: 52px;
+        height: 52px;
+        font-size: 22px;
+    }
+
+    .wiersz {
+        grid-template-columns: 40px minmax(0, 1fr);
+        row-gap: 6px;
+    }
+
+    .wiersz .kat,
+    .wiersz .wynik-blok,
+    .wiersz .data {
+        grid-column: 2;
+        text-align: left;
+    }
+
+    .data small {
+        display: inline;
+        margin-left: 6px;
+    }
+}

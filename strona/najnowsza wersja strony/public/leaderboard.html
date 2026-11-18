@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leaderboard</title>
+    <link rel="stylesheet" href="motyw.css">
+    <link rel="stylesheet" href="leaderboard.css">
+    <script src="motyw.js"></script>
+</head>
+<body>
+
+    <main class="kontener">
+        <h1>Leaderboard</h1>
+
+        <div class="filtry" id="filtry" role="group" aria-label="Kategoria"></div>
+
+        <p id="komunikat">Ładowanie rankingu...</p>
+        <p id="twoje-miejsce" class="twoje-miejsce" hidden></p>
+
+        <div class="podium" id="podium"></div>
+        <ol class="lista" id="ranking"></ol>
+
+        <p class="powrot">
+            <a href="index.html">
+                Powrót
+            </a>
+        </p>
+    </main>
+
+    <script src="leaderboard.js"></script>
+</body>
+</html>

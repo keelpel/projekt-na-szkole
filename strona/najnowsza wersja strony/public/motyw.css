@@ -1,0 +1,197 @@
+/* motyw.css – zmienne kolorów jasnego i ciemnego motywu + przycisk przełączania */
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@500;700&display=swap");
+
+:root {
+    --tlo-strony:          #F4F9FC;
+    --tlo-glowne:          #EAF6FF;
+    --karta:               #FFFFFF;
+    --tlo-pole:            #F4F9FC;
+    --tlo-hover:           #DCEEFB;
+    --tlo-wybrana:         #D2E9FF;
+    --obramowanie:         #e1e8f0;
+    --obramowanie-hover:   #9CCBEF;
+    --tekst:               #172033;
+    --akcent:              #3B9BE8;
+    --akcent-hover:        #2A86D0;
+    --link:                #2A86D0;
+    --wylaczony:           #B8C7D6;
+    --poprawna-tlo:        #D9F7E3;
+    --poprawna:            #3DBE6C;
+    --zla-tlo:             #FDE0E0;
+    --zla:                 #E55353;
+    --zloto:               #FFF4CC;
+    --srebro:              #EEF1F5;
+    --braz:                #FBE6D4;
+}
+
+[data-theme="dark"] {
+    color-scheme: dark;
+    --tlo-strony:          #1B1826;
+    --tlo-glowne:          #231F33;
+    --karta:               #2D2840;
+    --tlo-pole:            #26213A;
+    --tlo-hover:           #3A3358;
+    --tlo-wybrana:         #433A6B;
+    --obramowanie:         #3D3757;
+    --obramowanie-hover:   #6B5CA5;
+    --tekst:               #ECE9F7;
+    --akcent:              #8B6CF0;
+    --akcent-hover:        #A78BFA;
+    --link:                #B9A3FF;
+    --wylaczony:           #4A4566;
+    --poprawna-tlo:        #1F3D2D;
+    --poprawna:            #4ADE80;
+    --zla-tlo:             #4A2430;
+    --zla:                 #F87171;
+    --zloto:               #4D4320;
+    --srebro:              #3B3950;
+    --braz:                #4D3326;
+}
+
+.przycisk-motywu {
+    position: fixed;
+    top: 15px;
+    right: 15px;
+    z-index: 1000;
+    width: 44px;
+    height: 44px;
+    font-size: 20px;
+    background: var(--karta);
+    border: 2px solid var(--obramowanie);
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    transition: transform 0.2s ease;
+}
+
+.przycisk-motywu:hover {
+    transform: scale(1.1);
+}
+
+
+/* ==========================================================
+   Motyw "femboy" (easter egg: wpisz "femboy" na dowolnej stronie)
+   ========================================================== */
+
+[data-theme="femboy"] {
+    color-scheme: light;
+    --tlo-strony:          #FFF0F7;
+    --tlo-glowne:          #FFE3F1;
+    --karta:               #FFF9FC;
+    --tlo-pole:            #FFEAF4;
+    --tlo-hover:           #FFD3E8;
+    --tlo-wybrana:         #FFC2E0;
+    --obramowanie:         #F9B8D9;
+    --obramowanie-hover:   #F48FC0;
+    --tekst:               #5A2A4A;
+    --akcent:              #D6408F;
+    --akcent-hover:        #B92E78;
+    --link:                #C2307F;
+    --wylaczony:           #E8C5D8;
+    --poprawna-tlo:        #D8F7E8;
+    --poprawna:            #3DBE8A;
+    --zla-tlo:             #FFD6DE;
+    --zla:                 #E0475F;
+    --zloto:               #FFF0B8;
+    --srebro:              #EDE6F7;
+    --braz:                #FFDCCB;
+}
+
+html[data-theme="femboy"] body {
+    font-family: "Quicksand", "Nunito", "Segoe UI", sans-serif;
+    background-image:
+        radial-gradient(circle at 20px 20px, rgba(255, 255, 255, 0.75) 3px, transparent 4px),
+        linear-gradient(135deg, #FFE3F1 0%, #EBDFFF 100%);
+    background-size: 44px 44px, auto;
+    background-attachment: fixed;
+}
+
+/* słodkie ozdoby przy tytułach */
+[data-theme="femboy"] h1::after {
+    content: " ✨";
+}
+
+[data-theme="femboy"] .tytul-quizu::after {
+    content: " 🎀";
+}
+
+[data-theme="femboy"] ::selection {
+    background: #FFB3D9;
+    color: #5A2A4A;
+}
+
+
+/* ---------- Femboy: więcej słodkości ---------- */
+
+/* zaokrąglone, różowo świecące karty */
+html[data-theme="femboy"] .pytanie,
+html[data-theme="femboy"] .linkdoquizu,
+html[data-theme="femboy"] .kontener,
+html[data-theme="femboy"] .formularz,
+html[data-theme="femboy"] .wynik-pokazany {
+    border-width: 2px;
+    border-radius: 22px;
+    box-shadow: 0 6px 18px rgba(244, 143, 192, 0.35);
+}
+
+html[data-theme="femboy"] .pytanie:hover,
+html[data-theme="femboy"] .linkdoquizu:hover {
+    transform: translateY(-3px) rotate(-0.4deg);
+    box-shadow: 0 10px 24px rgba(244, 143, 192, 0.5);
+}
+
+html[data-theme="femboy"] .odpowiedz {
+    border-radius: 18px;
+}
+
+/* przyciski jak pastylki */
+html[data-theme="femboy"] button,
+html[data-theme="femboy"] .menu-uzytkownika a,
+html[data-theme="femboy"] #status-uzytkownika,
+html[data-theme="femboy"] .przycisk-sprawdz {
+    border-radius: 999px;
+}
+
+/* przycisk muzyki obok przycisku motywu */
+.przycisk-muzyki {
+    right: 69px;
+}
+
+/* unoszące się ozdobniki i iskierki po kliknięciu (dodaje je motyw.js) */
+.slodki-unosi {
+    position: fixed;
+    bottom: -50px;
+    z-index: 900;
+    opacity: 0.85;
+    pointer-events: none;
+    user-select: none;
+    animation: slodki-unos linear forwards;
+}
+
+@keyframes slodki-unos {
+    0%   { transform: translateY(0) rotate(0deg); opacity: 0; }
+    10%  { opacity: 0.85; }
+    90%  { opacity: 0.85; }
+    100% { transform: translateY(-115vh) rotate(30deg); opacity: 0; }
+}
+
+.slodki-klik {
+    position: fixed;
+    z-index: 1001;
+    font-size: 22px;
+    pointer-events: none;
+    user-select: none;
+    animation: slodki-klik 0.9s ease-out forwards;
+}
+
+@keyframes slodki-klik {
+    from { transform: translate(-50%, -50%) scale(0.6); opacity: 1; }
+    to   { transform: translate(-50%, -190%) scale(1.5); opacity: 0; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .slodki-unosi,
+    .slodki-klik {
+        display: none;
+    }
+}

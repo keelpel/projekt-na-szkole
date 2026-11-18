@@ -1,0 +1,562 @@
+/* profil.css – styl strony profilu (profil.html) */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: var(--tlo-glowne);
+    font-family: "Inter", -apple-system, "Nunito", BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    color: var(--tekst);
+}
+
+[hidden] {
+    display: none !important;
+}
+
+/* ---------- Karta ---------- */
+
+.kontener.profil {
+    max-width: 820px;
+    margin: 40px auto;
+    padding: 30px;
+    background: var(--karta);
+    border: 1px solid var(--obramowanie);
+    border-radius: 16px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+.profil h2 {
+    margin: 0 0 14px;
+    padding-bottom: 8px;
+    font-size: 20px;
+    border-bottom: 2px solid var(--tlo-glowne);
+}
+
+.profil p {
+    line-height: 1.6;
+}
+
+.panel {
+    margin-top: 28px;
+}
+
+.srodek {
+    text-align: center;
+}
+
+#komunikat {
+    text-align: center;
+    font-weight: 600;
+}
+
+/* ---------- Nagłówek profilu ---------- */
+
+.profil-gora {
+    display: flex;
+    align-items: center;
+    gap: 22px;
+    padding: 22px;
+    background: var(--tlo-pole);
+    border: 1px solid var(--obramowanie);
+    border-radius: 16px;
+}
+
+.avatar {
+    flex-shrink: 0;
+    width: 88px;
+    height: 88px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+    font-weight: 700;
+    color: #FFFFFF;
+    background: linear-gradient(135deg, var(--akcent), var(--akcent-hover));
+    border-radius: 50%;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+    user-select: none;
+}
+
+.profil-dane {
+    min-width: 0;
+}
+
+.profil-etykieta {
+    margin: 0;
+    font-size: 12px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    opacity: 0.7;
+}
+
+.profil-dane h1 {
+    margin: 2px 0 6px;
+    font-size: 30px;
+    line-height: 1.2;
+    overflow-wrap: anywhere;
+}
+
+.profil-email {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 8px;
+    margin: 0 0 4px;
+}
+
+.profil-staz {
+    margin: 0;
+    font-size: 14px;
+    opacity: 0.8;
+}
+
+.przycisk-maly {
+    padding: 3px 12px;
+    font-family: inherit;
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--link);
+    background: transparent;
+    border: 1.5px solid var(--akcent);
+    border-radius: 999px;
+    cursor: pointer;
+    transition: background 0.2s ease, color 0.2s ease;
+}
+
+.przycisk-maly:hover {
+    color: #FFFFFF;
+    background: var(--akcent);
+}
+
+/* ---------- Statystyki ---------- */
+
+.statystyki {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 14px;
+}
+
+.statystyka {
+    padding: 16px 12px;
+    text-align: center;
+    background: var(--tlo-pole);
+    border: 1px solid var(--obramowanie);
+    border-radius: 14px;
+    transition: transform 0.2s ease;
+}
+
+.statystyka:hover {
+    transform: translateY(-2px);
+}
+
+.statystyka-liczba {
+    display: block;
+    font-size: 30px;
+    font-weight: 700;
+    color: var(--link);
+}
+
+.statystyka-opis {
+    display: block;
+    font-size: 13px;
+    opacity: 0.85;
+}
+
+.statystyka-pod {
+    display: block;
+    margin-top: 2px;
+    font-size: 12px;
+    opacity: 0.65;
+}
+
+/* ---------- Wykres ---------- */
+
+.wykres {
+    padding: 10px;
+    background: var(--tlo-pole);
+    border: 1px solid var(--obramowanie);
+    border-radius: 14px;
+}
+
+.wykres svg {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+/* ---------- Kategorie ---------- */
+
+.kategoria {
+    margin-bottom: 10px;
+    padding: 12px 16px;
+    background: var(--tlo-pole);
+    border: 1px solid var(--obramowanie);
+    border-radius: 12px;
+}
+
+.kategoria-gora {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 4px 12px;
+    font-weight: 600;
+}
+
+.kategoria-info {
+    font-size: 13px;
+    font-weight: 400;
+    opacity: 0.8;
+}
+
+.pasek {
+    height: 10px;
+    margin-top: 8px;
+    overflow: hidden;
+    background: var(--tlo-hover);
+    border-radius: 999px;
+}
+
+.pasek-wypelnienie {
+    width: 0;
+    height: 100%;
+    background: linear-gradient(90deg, var(--akcent), var(--akcent-hover));
+    border-radius: 999px;
+    transition: width 0.8s ease;
+}
+
+/* ---------- Odznaki ---------- */
+
+.odznaki {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 12px;
+}
+
+.odznaka {
+    padding: 14px 10px;
+    text-align: center;
+    background: var(--tlo-pole);
+    border: 1px solid var(--obramowanie);
+    border-radius: 14px;
+}
+
+.odznaka-ikona {
+    display: block;
+    font-size: 32px;
+}
+
+.odznaka-nazwa {
+    display: block;
+    margin-top: 4px;
+    font-weight: 700;
+}
+
+.odznaka-opis {
+    display: block;
+    margin-top: 2px;
+    font-size: 12px;
+    opacity: 0.75;
+}
+
+.odznaka.zdobyta {
+    border: 2px solid var(--akcent);
+}
+
+.odznaka.zablokowana {
+    filter: grayscale(1);
+    opacity: 0.5;
+}
+
+/* ---------- Historia wyników ---------- */
+
+#brak-wynikow {
+    padding: 16px;
+    text-align: center;
+    background: var(--tlo-pole);
+    border-radius: 10px;
+}
+
+.tabela-wynikow {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    background: var(--karta);
+    border: 1px solid var(--obramowanie);
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+th,
+td {
+    padding: 12px 14px;
+    text-align: left;
+}
+
+thead th {
+    background: var(--akcent);
+    color: #FFFFFF;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+tbody td {
+    border-top: 1px solid var(--obramowanie);
+}
+
+tbody tr {
+    transition: background 0.2s ease;
+}
+
+tbody tr:nth-child(even) {
+    background: var(--tlo-pole);
+}
+
+tbody tr:hover {
+    background: var(--tlo-hover);
+}
+
+.pigulka {
+    display: inline-block;
+    margin-left: 8px;
+    padding: 2px 10px;
+    font-size: 12px;
+    font-weight: 700;
+    border-radius: 999px;
+}
+
+.pigulka.wysoki {
+    color: var(--poprawna);
+    background: var(--poprawna-tlo);
+}
+
+.pigulka.sredni {
+    color: var(--tekst);
+    background: var(--zloto);
+}
+
+.pigulka.niski {
+    color: var(--zla);
+    background: var(--zla-tlo);
+}
+
+/* ---------- Link powrotu ---------- */
+
+.powrot {
+    margin-top: 28px;
+}
+
+.profil a {
+    color: var(--link);
+    font-weight: 600;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.profil a:hover {
+    color: var(--tekst);
+    text-decoration: underline;
+}
+
+/* ---------- Telefony ---------- */
+
+@media (max-width: 600px) {
+    .kontener.profil {
+        margin: 20px 12px;
+        padding: 20px 16px;
+    }
+
+    .profil-gora {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .profil-email {
+        justify-content: center;
+    }
+
+    th,
+    td {
+        padding: 10px;
+        font-size: 14px;
+    }
+}
+
+
+/* ---------- Avatar: zdjęcie i przyciski ---------- */
+
+.avatar-blok {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-shrink: 0;
+    gap: 8px;
+}
+
+.avatar {
+    position: relative;
+    overflow: hidden;
+}
+
+.avatar-obraz {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.przycisk-maly.glowny {
+    color: #FFFFFF;
+    background: var(--akcent);
+}
+
+.przycisk-maly.glowny:hover:not(:disabled) {
+    background: var(--akcent-hover);
+}
+
+.przycisk-maly:disabled {
+    cursor: not-allowed;
+    opacity: 0.6;
+}
+
+/* ---------- Okno zmiany avatara ---------- */
+
+.okno {
+    position: fixed;
+    inset: 0;
+    z-index: 2000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 16px;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.okno-karta {
+    width: 100%;
+    max-width: 360px;
+    padding: 22px;
+    text-align: center;
+    color: var(--tekst);
+    background: var(--karta);
+    border: 1px solid var(--obramowanie);
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+}
+
+.okno-karta h2 {
+    margin: 0 0 14px;
+    font-size: 20px;
+}
+
+#kadr-avatara {
+    display: block;
+    width: 280px;
+    max-width: 100%;
+    height: auto;
+    aspect-ratio: 1;
+    margin: 0 auto;
+    background: var(--tlo-pole);
+    border-radius: 12px;
+    cursor: grab;
+    touch-action: none;
+}
+
+#kadr-avatara:active {
+    cursor: grabbing;
+}
+
+.suwak {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 14px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.suwak input {
+    flex: 1;
+    accent-color: var(--akcent);
+}
+
+.okno-pomoc {
+    margin: 10px 0;
+    font-size: 13px;
+    opacity: 0.75;
+}
+
+.blad-avatara {
+    margin: 8px 0;
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--zla);
+}
+
+.okno-przyciski {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 14px;
+}
+
+
+/* ---------- Zmiana nazwy ---------- */
+
+.formularz-nazwy {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.formularz-nazwy input {
+    flex: 1;
+    min-width: 200px;
+    padding: 10px 14px;
+    font-family: inherit;
+    font-size: 15px;
+    color: var(--tekst);
+    background: var(--tlo-pole);
+    border: 2px solid var(--obramowanie);
+    border-radius: 10px;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.formularz-nazwy input:focus {
+    outline: none;
+    border-color: var(--akcent);
+    box-shadow: 0 0 0 3px rgba(139, 108, 240, 0.25);
+}
+
+.formularz-nazwy input:disabled {
+    cursor: not-allowed;
+    opacity: 0.6;
+}
+
+.formularz-nazwy .przycisk-maly {
+    padding: 8px 18px;
+    font-size: 14px;
+}
+
+.info-nazwy {
+    margin: 10px 0 0;
+    font-size: 14px;
+    opacity: 0.85;
+}
+
+.info-nazwy.blad {
+    color: var(--zla);
+    font-weight: 600;
+    opacity: 1;
+}
+
+.info-nazwy.sukces {
+    color: var(--poprawna);
+    font-weight: 600;
+    opacity: 1;
+}

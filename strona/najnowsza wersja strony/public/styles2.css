@@ -1,0 +1,277 @@
+/* ==========================================================
+   styles2.css – styl strony quizu (quiz.html)
+   Spójny ze styles.css ze strony głównej
+   ========================================================== */
+
+* {
+    box-sizing: border-box;
+}
+
+.strona {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background: var(--tlo-strony);
+    font-family: "Inter", -apple-system, "Nunito", BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    color: var(--tekst);
+}
+
+/* ---------- Nagłówek ---------- */
+
+.naglowek {
+    background-color: var(--karta);
+    height: 100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    flex-shrink: 0;
+}
+
+.tytul-strony {
+    margin: 0;
+    text-shadow: 2px 3px 5px rgba(0, 0, 0, 0.25);
+}
+
+.logo {
+    height: 70px;
+    width: auto;
+    filter: drop-shadow(2px 3px 5px rgba(0, 0, 0, 0.25));
+}
+
+/* ---------- Zawartość ---------- */
+
+.zawartosc {
+    flex: 1;
+    background-color: var(--tlo-glowne);
+    width: 100%;
+    padding: 30px 20px;
+}
+
+.quiz {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.tytul-quizu {
+    margin: 0 0 25px;
+    text-align: center;
+    font-size: 28px;
+    text-transform: capitalize;
+    text-shadow: 2px 3px 5px rgba(0, 0, 0, 0.15);
+}
+
+/* ---------- Pytania ---------- */
+
+.pytania {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.pytanie {
+    background: var(--karta);
+    border: 1px solid var(--obramowanie);
+    border-radius: 12px;
+    padding: 20px 24px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.pytanie:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 14px rgba(0, 0, 0, 0.1);
+}
+
+.tresc-pytania {
+    margin: 0 0 15px;
+    font-size: 18px;
+    line-height: 1.4;
+}
+
+/* ---------- Odpowiedzi ---------- */
+
+.odpowiedzi {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.odpowiedz {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px 16px;
+    background: var(--tlo-pole);
+    border: 2px solid var(--obramowanie);
+    border-radius: 10px;
+    cursor: pointer;
+    user-select: none;
+    transition: background 0.2s ease, border-color 0.2s ease, transform 0.15s ease;
+}
+
+.odpowiedz:hover {
+    background: var(--tlo-hover);
+    border-color: var(--obramowanie-hover);
+    transform: translateX(3px);
+}
+
+.odpowiedz.wybrana {
+    background: var(--tlo-wybrana);
+    border-color: var(--akcent);
+    font-weight: 600;
+}
+
+.radio-odpowiedzi {
+    width: 18px;
+    height: 18px;
+    margin: 0;
+    flex-shrink: 0;
+    accent-color: var(--akcent);
+    cursor: pointer;
+}
+
+.tekst-odpowiedzi {
+    flex: 1;
+    line-height: 1.4;
+}
+
+/* ---------- Przycisk i wynik ---------- */
+
+.przycisk-sprawdz {
+    display: block;
+    margin: 30px auto 0;
+    padding: 14px 40px;
+    font-family: inherit;
+    font-size: 17px;
+    font-weight: 600;
+    color: #FFFFFF;
+    background: var(--akcent);
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+}
+
+.przycisk-sprawdz:hover:not(:disabled) {
+    background: var(--akcent-hover);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 14px rgba(0, 0, 0, 0.2);
+}
+
+.przycisk-sprawdz:active:not(:disabled) {
+    transform: translateY(0);
+}
+
+.przycisk-sprawdz:disabled {
+    background: var(--wylaczony);
+    cursor: not-allowed;
+    box-shadow: none;
+}
+
+.wynik {
+    margin: 25px 0 0;
+    text-align: center;
+    font-size: 22px;
+    line-height: 1.5;
+}
+
+.wynik-pokazany {
+    background: var(--karta);
+    border: 1px solid var(--obramowanie);
+    border-radius: 12px;
+    padding: 18px 24px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+    animation: pojawienie 0.4s ease;
+}
+
+@keyframes pojawienie {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ---------- Stopka ---------- */
+
+.stopka {
+    background: var(--karta);
+    min-height: 50px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.link-powrot {
+    color: var(--link);
+    font-weight: 600;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.link-powrot:hover {
+    color: var(--tekst);
+    text-decoration: underline;
+}
+
+/* ---------- Telefony ---------- */
+
+@media (max-width: 600px) {
+    .naglowek {
+        height: 80px;
+    }
+
+    .logo {
+        height: 50px;
+    }
+
+    .tytul-strony {
+        font-size: 22px;
+    }
+
+    .zawartosc {
+        padding: 20px 12px;
+    }
+
+    .pytanie {
+        padding: 16px;
+    }
+
+    .tresc-pytania {
+        font-size: 16px;
+    }
+}
+
+
+/* ==========================================================
+   Podświetlanie odpowiedzi po sprawdzeniu quizu
+   ========================================================== */
+
+.odpowiedz.poprawna {
+    background: var(--poprawna-tlo);
+    border-color: var(--poprawna);
+    font-weight: 600;
+}
+
+.odpowiedz.zla {
+    background: var(--zla-tlo);
+    border-color: var(--zla);
+}
+
+.odpowiedz.poprawna:hover,
+.odpowiedz.zla:hover {
+    transform: none;
+}
+
+.radio-odpowiedzi:disabled {
+    cursor: default;
+}

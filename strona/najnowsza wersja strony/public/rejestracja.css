@@ -1,0 +1,135 @@
+/* rejestracja.css – styl strony rejestracji (rejestracja.html) */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: var(--tlo-glowne);
+    font-family: "Inter", -apple-system, "Nunito", BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    color: var(--tekst);
+}
+
+/* ---------- Karta formularza ---------- */
+
+.formularz {
+    max-width: 440px;
+    margin: 60px auto;
+    padding: 30px;
+    background: var(--karta);
+    border: 1px solid var(--obramowanie);
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+.formularz h1 {
+    margin: 0 0 20px;
+    text-align: center;
+    text-shadow: 2px 3px 5px rgba(0, 0, 0, 0.2);
+}
+
+.formularz form {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.formularz label {
+    margin-top: 10px;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+/* ---------- Pola ---------- */
+
+.formularz input {
+    width: 100%;
+    padding: 11px 14px;
+    font-family: inherit;
+    font-size: 15px;
+    color: var(--tekst);
+    background: var(--tlo-pole);
+    border: 2px solid var(--obramowanie);
+    border-radius: 10px;
+    transition: border-color 0.2s ease, background 0.2s ease, box-shadow 0.2s ease;
+}
+
+.formularz input:focus {
+    outline: none;
+    background: var(--karta);
+    border-color: var(--akcent);
+    box-shadow: 0 0 0 3px rgba(59, 155, 232, 0.2);
+}
+
+/* ---------- Przycisk ---------- */
+
+.formularz button {
+    margin-top: 20px;
+    padding: 13px 20px;
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: 600;
+    color: #FFFFFF;
+    background: var(--akcent);
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+}
+
+.formularz button:hover {
+    background: var(--akcent-hover);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 14px rgba(0, 0, 0, 0.2);
+}
+
+.formularz button:active {
+    transform: translateY(0);
+}
+
+/* ---------- Komunikat i linki ---------- */
+
+#komunikat {
+    margin: 15px 0 0;
+    text-align: center;
+    font-weight: 600;
+    line-height: 1.5;
+}
+
+#komunikat:empty {
+    display: none;
+}
+
+.formularz > p {
+    text-align: center;
+    line-height: 1.6;
+}
+
+.formularz a {
+    color: var(--link);
+    font-weight: 600;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.formularz a:hover {
+    color: var(--tekst);
+    text-decoration: underline;
+}
+
+.formularz > a {
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+}
+
+/* ---------- Telefony ---------- */
+
+@media (max-width: 600px) {
+    .formularz {
+        margin: 20px 12px;
+        padding: 20px 16px;
+    }
+}

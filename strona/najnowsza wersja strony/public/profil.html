@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mój profil</title>
+    <link rel="stylesheet" href="motyw.css">
+    <link rel="stylesheet" href="profil.css">
+    <script src="motyw.js"></script>
+</head>
+<body>
+
+    <main class="kontener profil">
+
+        <p id="komunikat">Ładowanie profilu...</p>
+
+        <!-- nagłówek profilu -->
+        <section id="dane-profilu" class="profil-gora" hidden>
+            <div class="avatar-blok">
+                <div class="avatar" id="avatar">
+                    <span id="avatar-litera" aria-hidden="true">?</span>
+                    <img id="avatar-obraz" class="avatar-obraz" alt="Twój avatar" hidden>
+                </div>
+
+                <button type="button" id="zmien-avatar" class="przycisk-maly">
+                    📷 Zmień
+                </button>
+                <button type="button" id="usun-avatar" class="przycisk-maly" hidden>
+                    🗑 Usuń
+                </button>
+
+                <input
+                    type="file"
+                    id="plik-avatara"
+                    accept="image/png,image/jpeg,image/webp,image/gif"
+                    hidden
+                >
+            </div>
+
+            <div class="profil-dane">
+                <p class="profil-etykieta">Mój profil</p>
+                <h1 id="nazwa-uzytkownika"></h1>
+
+                <p class="profil-email">
+                    <span id="email-uzytkownika"></span>
+                    <button type="button" id="przelacz-email" class="przycisk-maly">
+                        👁 pokaż
+                    </button>
+                </p>
+
+                <p class="profil-staz">
+                    Konto utworzone: <span id="data-utworzenia"></span>
+                    · <span id="staz"></span>
+                </p>
+            </div>
+        </section>
+
+        <section id="ustawienia-sekcja" class="panel" hidden>
+            <h2>Zmiana nazwy</h2>
+
+            <form id="formularz-nazwy" class="formularz-nazwy">
+                <input
+                    type="text"
+                    id="nowa-nazwa"
+                    placeholder="Nowa nazwa użytkownika"
+                    minlength="3"
+                    maxlength="20"
+                    autocomplete="off"
+                    required
+                >
+                <button type="submit" id="zmien-nazwe" class="przycisk-maly glowny">
+                    Zmień nazwę
+                </button>
+            </form>
+
+            <p id="info-nazwy" class="info-nazwy"></p>
+        </section>
+
+        <section id="statystyki-sekcja" class="panel" hidden>
+            <h2>Statystyki</h2>
+            <div class="statystyki" id="statystyki"></div>
+        </section>
+
+        <section id="wykres-sekcja" class="panel" hidden>
+            <h2>Postępy</h2>
+            <div class="wykres" id="wykres"></div>
+        </section>
+
+        <section id="kategorie-sekcja" class="panel" hidden>
+            <h2>Twoje kategorie</h2>
+            <div id="kategorie"></div>
+        </section>
+
+        <section id="odznaki-sekcja" class="panel" hidden>
+            <h2>Odznaki</h2>
+            <div class="odznaki" id="odznaki"></div>
+        </section>
+
+        <section id="historia-wynikow" class="panel" hidden>
+            <h2>Historia wyników</h2>
+
+            <p id="brak-wynikow" hidden>
+                Nie masz jeszcze zapisanych wyników.
+            </p>
+
+            <div class="tabela-wynikow" id="kontener-tabeli">
+                <table id="tabela-wynikow">
+                    <thead>
+                        <tr>
+                            <th>Kategoria</th>
+                            <th>Wynik</th>
+                            <th>Data</th>
+                        </tr>
+                    </thead>
+                    <tbody id="wyniki"></tbody>
+                </table>
+            </div>
+
+            <p class="srodek">
+                <button type="button" id="pokaz-wiecej" class="przycisk-maly" hidden></button>
+            </p>
+        </section>
+
+        <p class="powrot">
+            <a href="http://localhost:3000/index.html">
+                Powrót na stronę główną
+            </a>
+        </p>
+    </main>
+
+    <!-- okno zmiany avatara -->
+    <div id="okno-avatara" class="okno" role="dialog" aria-modal="true" aria-label="Zmień avatar" hidden>
+        <div class="okno-karta">
+            <h2>Zmień avatar</h2>
+
+            <canvas id="kadr-avatara" width="280" height="280"></canvas>
+
+            <label class="suwak">
+                Przybliżenie
+                <input type="range" id="zoom-avatara" min="1" max="3" step="0.01" value="1">
+            </label>
+
+            <p class="okno-pomoc">Przeciągnij zdjęcie, żeby ustawić kadr.</p>
+            <p id="blad-avatara" class="blad-avatara" hidden></p>
+
+            <div class="okno-przyciski">
+                <button type="button" id="zapisz-avatar" class="przycisk-maly glowny">Zapisz</button>
+                <button type="button" id="anuluj-avatar" class="przycisk-maly">Anuluj</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="profil.js"></script>
+    <script src="avatar.js"></script>
+</body>
+</html>
