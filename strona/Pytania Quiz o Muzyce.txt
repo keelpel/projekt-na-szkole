@@ -60,36 +60,36 @@ Quiz o lore internetu:
 29. Do kogo należy kanał "webdriver torso" - Google (Mozilla, NASA, Microsoft)
 30. W którym roku według legendy były aktywne automaty z grą "Polybius"? - 1981 (1982, 1990, 1985)
 Quiz o True Crime:
-1. Ile ofiar miał Kuba Rozpruwacz - 5
-2. Co oznaczał BTK w kontekście Dennisa Radera - Bind Torture Kill
-3. Kto miał pseudonim "Unabombera" - Ted Kaczynski
-4. Ile razy Ted Bundy uciekl - 2
-5. Ile niesłusznie Tomasz Komenda spędził w więzieniu - 18 lat
-6. Jaki miał tytuł książka w której Krystian Bala opisał swoją zbrodnie - Amok
-7. W którym roku został złamany szyfr Z340 - 2020
-8. Jaka gre zainspirował morderca Manuel Manny Pardo Jr - Hotline Miami 2: Wrong Number
-9. Ile pieniędzy zażądał D.B Cooper - 200 tysięcy dolarów
-10. Jaka marka była ofiarą kryzysu w 1982 przez który straciło życie 7 osób - Tylenol
-11. W jakim miescie zaginęła Ewa Tylman - Poznań
-12. W sprawie Tamam Shud, skrawek znaleziony u ofiary z tym właśnie słowem pochodzi z - Rubajjatów Omara Chajjama
-13. W którym stanie zmarł Ted Bundy - Floryda
-14. Za pomocą jakiego przedmiotu Robert Maudsley zabił David'a Francis'a w 1977 - Widelec
-15. Jak nazywała się gra komputerowa, w której to gracz musiał odwzorować asasynacje JFK? - JFK Reloaded
-16. Jaki automat do gier ukazywał ekran z zaginionymi dziećmi? - Sente Minigolf
-17. Jaki program TV prowadzony przez Johna Walsha pomagał łapać przestępców? - America’s Most Wanted
-18. Jako jaki klaun występował John Wayne Gacy? Pogo
-19. W którym roku zastrzelono Pablo Escobara? - 1993
-20. Kto był nieslusznie podejrzane o bycie "Bestią z Jersey" - Alphonse Le Gastelois
-21. Na jakiej platformie był aktywny Takahiro Shiraishi - Twitter
-22. Czym pierwotnie Ricardo López planował zabić lub trwale okaleczyć popularną piosenkarke Björk - urządzenie wypełnione igłami skażonymi krwią nosiciela HIV
-23. Jak miał na imię nazista, którego Hitler się obawiał - Reinhard Heydrich
-24. Pomiędzy 1984 a 2005 kobiety w przedziale wiekowym od 13 do 37 lat zaczęły znikać, w jakiej okolicy one znikały - autostrada A6
-25. Jaki seryjny morderca był inspiracją dla filmu Teksańska masakra piłą mechaniczną - Ed Gein
-26. Jak nazywa się metoda identyfikacji osób na podstawie linii papilarnych? - Daktyloskopia
-27. Co oznacza skrót CSI? Crime Scene Investigation
-28. W którym roku doszło do masakry w Columbine High School? 1999
-29. Ile osób zginęło w Jonestown w 1978 roku? 918
-30. W którym roku zaginął Jimmy Hoffa? 1975 | 1968, 1972, 1981
+1. Ile ofiar miał Kuba Rozpruwacz - 5 (30, 17, 44)
+2. Co oznaczał BTK w kontekście Dennisa Radera - Bind Torture Kill (Blind torturę kill, Break Take Kidnap, Beat Torment Kill)
+3. Kto miał pseudonim "Unabombera" - Ted Kaczynski (David Berkowitz, Timothy McVeigh, Eric Rudolph)
+4. Ile razy Ted Bundy uciekl - 2 (1, 3, 4)
+5. Ile niesłusznie Tomasz Komenda spędził w więzieniu - 18 lat (20 lat, 13 lat, 27 lat)
+6. Jaki miał tytuł książka w której Krystian Bala opisał swoją zbrodnie - Amok (Bestia, Furia, Obłęd)
+7. W którym roku został złamany szyfr Z340 - 2020 (2023, 2018, 2021)
+8. Jaką grę zainspirował morderca Manuel Manny Pardo Jr - Hotline Miami 2: Wrong Number (Manhunt 2, Postal 2, Hatred)
+9. Ile pieniędzy zażądał D.B Cooper - 200 tysięcy dolarów (160 tysięcy dolarów, 415 tysięcy dolarów, 100 tysięcy dolarów)
+10. Jaka marka była ofiarą kryzysu w 1982 przez który straciło życie 7 osób - Tylenol (Bayer Aspirin, Advil, Pepto-Bismol)
+11. W jakim miescie zaginęła Ewa Tylman - Poznań (Lublin, Gliwice, Katowice)
+12. W sprawie Tamam Shud, skrawek znaleziony u ofiary z tym właśnie słowem pochodzi z - Rubajjatów Omara Chajjama (Księgi tysiąca i jednej nocy, Boskiej komedii, Dywanu Hafeza)
+13. W którym stanie zmarł Ted Bundy - Floryda (Oklahoma, Nowy Meksyk, Waszyngton)
+14. Za pomocą jakiego przedmiotu Robert Maudsley zabił David'a Francis'a w 1977 - Widelec (Długopis, Nóż, Młotek)
+15. Jak nazywała się gra komputerowa, w której to gracz musiał odwzorować asasynacje JFK? - JFK Reloaded (Shoot the Kennedy, Dealey Plaza Reloaded, Dallas 1963)
+16. Jaki automat do gier ukazywał ekran z zaginionymi dziećmi? - Sente Minigolf (Space Invaders, Pole Position, Mortal Kombat II)
+17. Jaki program TV prowadzony przez Johna Walsha pomagał łapać przestępców? - America’s Most Wanted (Unsolved Mysteries, Cops, Crime Watch Daily)
+18. Jako jaki klaun występował John Wayne Gacy? Pogo The Clown (Bozo the Clown, Patches the Clown, Koko the Clown)
+19. W którym roku zastrzelono Pablo Escobara? - 1993 (1984, 1997,1994)
+20. Kto był nieslusznie podejrzane o bycie "Bestią z Jersey" - Alphonse Le Gastelois (Edward Paisnel, Philip Le Brocq, Clifford Le Marquand)
+21. Na jakiej platformie był aktywny Takahiro Shiraishi - Twitter (Tumblr, Facebook, LINE)
+22. Czym pierwotnie Ricardo López planował zabić lub trwale okaleczyć popularną piosenkarke Björk - urządzenie wypełnione igłami skażonymi krwią nosiciela HIV (bomba z gwoździami, zatruty list, paczka z antraksem)
+23. Jak miał na imię nazista, którego Hitler się obawiał - Reinhard (Heinrich, Hermann, Joseph)
+24. Pomiędzy 1984 a 2005 kobiety w przedziale wiekowym od 13 do 37 lat zaczęły znikać, w jakiej okolicy one znikały - autostrada A6 (autostrada A1, autostrada A4, autostrada A2)
+25. Jaki seryjny morderca był inspiracją dla filmu Teksańska masakra piłą mechaniczną - Ed Gein (Ed Kemper, Albert Fish, Richard Ramirez)
+26. Jak nazywa się metoda identyfikacji osób na podstawie linii papilarnych? - Daktyloskopia (Antropometria, Odontologia sądowa, Toksykologia)
+27. Co oznacza skrót CSI? Crime Scene Investigation (Crime Science Institute, Criminal Surveillance Investigation, Crime Scene Intelligence)
+28. W którym roku doszło do masakry w Columbine High School? 1999 (2000, 1997, 2002)
+29. Ile osób zginęło w Jonestown w 1978 roku? - 918 (1028, 887, 982)
+30. W którym roku zaginął Jimmy Hoffa? 1975 (1968, 1972, 1981)
 
 Quiz o Internet Lore 2
 1. Co trzeba było wpisać w KanyeQuest3030, aby odblokować ukryty sekret związany z tą grą - ASCEND (DESCEND, YEEZUS, GRADUATION)
