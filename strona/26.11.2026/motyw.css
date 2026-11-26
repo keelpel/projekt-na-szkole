@@ -1,0 +1,399 @@
+/* motyw.css – zmienne kolorów jasnego i ciemnego motywu + przycisk przełączania */
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@500;700&display=swap");
+
+:root {
+    --tlo-strony:          #F4F9FC;
+    --tlo-glowne:          #EAF6FF;
+    --karta:               #FFFFFF;
+    --tlo-pole:            #F4F9FC;
+    --tlo-hover:           #DCEEFB;
+    --tlo-wybrana:         #D2E9FF;
+    --obramowanie:         #e1e8f0;
+    --obramowanie-hover:   #9CCBEF;
+    --tekst:               #172033;
+    --akcent:              #3B9BE8;
+    --akcent-hover:        #2A86D0;
+    --link:                #2A86D0;
+    --wylaczony:           #B8C7D6;
+    --poprawna-tlo:        #D9F7E3;
+    --poprawna:            #3DBE6C;
+    --zla-tlo:             #FDE0E0;
+    --zla:                 #E55353;
+    --zloto:               #FFF4CC;
+    --srebro:              #EEF1F5;
+    --braz:                #FBE6D4;
+}
+
+[data-theme="dark"] {
+    color-scheme: dark;
+    --tlo-strony:          #1B1826;
+    --tlo-glowne:          #231F33;
+    --karta:               #2D2840;
+    --tlo-pole:            #26213A;
+    --tlo-hover:           #3A3358;
+    --tlo-wybrana:         #433A6B;
+    --obramowanie:         #3D3757;
+    --obramowanie-hover:   #6B5CA5;
+    --tekst:               #ECE9F7;
+    --akcent:              #8B6CF0;
+    --akcent-hover:        #A78BFA;
+    --link:                #B9A3FF;
+    --wylaczony:           #4A4566;
+    --poprawna-tlo:        #1F3D2D;
+    --poprawna:            #4ADE80;
+    --zla-tlo:             #4A2430;
+    --zla:                 #F87171;
+    --zloto:               #4D4320;
+    --srebro:              #3B3950;
+    --braz:                #4D3326;
+}
+
+.przycisk-motywu {
+    position: fixed;
+    top: 15px;
+    right: 15px;
+    z-index: 1000;
+    width: 44px;
+    height: 44px;
+    font-size: 20px;
+    background: var(--karta);
+    border: 2px solid var(--obramowanie);
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    transition: transform 0.2s ease;
+}
+
+.przycisk-motywu:hover {
+    transform: scale(1.1);
+}
+
+
+/* ==========================================================
+   Motyw "femboy" (easter egg: wpisz "femboy" na dowolnej stronie)
+   ========================================================== */
+
+[data-theme="femboy"] {
+    color-scheme: light;
+    --tlo-strony:          #FFF0F7;
+    --tlo-glowne:          #FFE3F1;
+    --karta:               #FFF9FC;
+    --tlo-pole:            #FFEAF4;
+    --tlo-hover:           #FFD3E8;
+    --tlo-wybrana:         #FFC2E0;
+    --obramowanie:         #F9B8D9;
+    --obramowanie-hover:   #F48FC0;
+    --tekst:               #5A2A4A;
+    --akcent:              #D6408F;
+    --akcent-hover:        #B92E78;
+    --link:                #C2307F;
+    --wylaczony:           #E8C5D8;
+    --poprawna-tlo:        #D8F7E8;
+    --poprawna:            #3DBE8A;
+    --zla-tlo:             #FFD6DE;
+    --zla:                 #E0475F;
+    --zloto:               #FFF0B8;
+    --srebro:              #EDE6F7;
+    --braz:                #FFDCCB;
+}
+
+html[data-theme="femboy"] body {
+    font-family: "Quicksand", "Nunito", "Segoe UI", sans-serif;
+    background-image:
+        radial-gradient(circle at 20px 20px, rgba(255, 255, 255, 0.75) 3px, transparent 4px),
+        linear-gradient(135deg, #FFE3F1 0%, #EBDFFF 100%);
+    background-size: 44px 44px, auto;
+    background-attachment: fixed;
+}
+
+/* słodkie ozdoby przy tytułach */
+[data-theme="femboy"] h1::after {
+    content: " ✨";
+}
+
+[data-theme="femboy"] .tytul-quizu::after {
+    content: " 🎀";
+}
+
+[data-theme="femboy"] ::selection {
+    background: #FFB3D9;
+    color: #5A2A4A;
+}
+
+
+/* ---------- Femboy: więcej słodkości ---------- */
+
+/* zaokrąglone, różowo świecące karty */
+html[data-theme="femboy"] .pytanie,
+html[data-theme="femboy"] .linkdoquizu,
+html[data-theme="femboy"] .kontener,
+html[data-theme="femboy"] .formularz,
+html[data-theme="femboy"] .wynik-pokazany {
+    border-width: 2px;
+    border-radius: 22px;
+    box-shadow: 0 6px 18px rgba(244, 143, 192, 0.35);
+}
+
+html[data-theme="femboy"] .pytanie:hover,
+html[data-theme="femboy"] .linkdoquizu:hover {
+    transform: translateY(-3px) rotate(-0.4deg);
+    box-shadow: 0 10px 24px rgba(244, 143, 192, 0.5);
+}
+
+html[data-theme="femboy"] .odpowiedz {
+    border-radius: 18px;
+}
+
+/* przyciski jak pastylki */
+html[data-theme="femboy"] button,
+html[data-theme="femboy"] .menu-uzytkownika a,
+html[data-theme="femboy"] #status-uzytkownika,
+html[data-theme="femboy"] .przycisk-sprawdz {
+    border-radius: 999px;
+}
+
+/* przycisk muzyki obok przycisku motywu */
+.przycisk-muzyki {
+    right: 69px;
+}
+
+/* unoszące się ozdobniki i iskierki po kliknięciu (dodaje je motyw.js) */
+.slodki-unosi {
+    position: fixed;
+    bottom: -50px;
+    z-index: 900;
+    opacity: 0.85;
+    pointer-events: none;
+    user-select: none;
+    animation: slodki-unos linear forwards;
+}
+
+@keyframes slodki-unos {
+    0%   { transform: translateY(0) rotate(0deg); opacity: 0; }
+    10%  { opacity: 0.85; }
+    90%  { opacity: 0.85; }
+    100% { transform: translateY(-115vh) rotate(30deg); opacity: 0; }
+}
+
+.slodki-klik {
+    position: fixed;
+    z-index: 1001;
+    font-size: 22px;
+    pointer-events: none;
+    user-select: none;
+    animation: slodki-klik 0.9s ease-out forwards;
+}
+
+@keyframes slodki-klik {
+    from { transform: translate(-50%, -50%) scale(0.6); opacity: 1; }
+    to   { transform: translate(-50%, -190%) scale(1.5); opacity: 0; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .slodki-unosi,
+    .slodki-klik {
+        display: none;
+    }
+}
+
+
+
+/* ==========================================================
+   Quiz z nagraniami (touhoumuzyka): karty pytań z odtwarzaczem.
+   Stylowane są wszystkie pytania z .audio-pytania (:has),
+   kolory ze zmiennych, więc działa w jasnym, ciemnym i femboy.
+   ========================================================== */
+
+/* ---------- Karta pytania z muzyką ---------- */
+
+html .pytanie:has(.audio-pytania) {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 22px 26px 26px;
+    border-left: 6px solid var(--akcent);
+    background:
+        linear-gradient(
+            135deg,
+            color-mix(in srgb, var(--akcent) 12%, var(--karta)) 0%,
+            var(--karta) 65%
+        );
+}
+
+/* duża, ledwo widoczna nutka w rogu karty */
+.pytanie:has(.audio-pytania)::after {
+    content: "♪";
+    position: absolute;
+    top: 6px;
+    right: 18px;
+    font-size: 72px;
+    line-height: 1;
+    color: var(--akcent);
+    opacity: 0.08;
+    pointer-events: none;
+    user-select: none;
+}
+
+/* karta nie podskakuje, gdy ktoś steruje odtwarzaczem */
+html .pytanie:has(.audio-pytania):hover {
+    transform: none;
+}
+
+
+/* ---------- Treść pytania (nad odtwarzaczem) ---------- */
+
+.pytanie:has(.audio-pytania) .tresc-pytania {
+    order: 0;
+    margin: 0 0 16px;
+    padding-right: 50px;
+    font-size: 19px;
+}
+
+.pytanie:has(.audio-pytania) .tresc-pytania::before {
+    content: "🎵";
+    margin-right: 8px;
+}
+
+
+/* ---------- Odtwarzacz ---------- */
+
+.audio-pytania {
+    order: 1;
+    display: block;
+    width: 100%;
+    height: 48px;
+    margin: 0 0 18px;
+    border: 2px solid var(--obramowanie);
+    border-radius: 999px;
+    background: var(--tlo-wybrana);
+    box-shadow: 0 3px 10px color-mix(in srgb, var(--akcent) 22%, transparent);
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.audio-pytania:hover {
+    border-color: var(--obramowanie-hover);
+    box-shadow: 0 5px 14px color-mix(in srgb, var(--akcent) 35%, transparent);
+}
+
+.audio-pytania:focus-visible {
+    outline: 3px solid var(--akcent);
+    outline-offset: 3px;
+}
+
+/* Chrome, Edge, Safari: kolory panelu sterowania (Firefox je ignoruje) */
+.audio-pytania::-webkit-media-controls-panel {
+    background-color: var(--tlo-wybrana);
+}
+
+.audio-pytania::-webkit-media-controls-current-time-display,
+.audio-pytania::-webkit-media-controls-time-remaining-display {
+    color: var(--tekst);
+}
+
+
+/* ---------- Odpowiedzi w siatce 2x2 ---------- */
+
+.pytanie:has(.audio-pytania) .odpowiedzi {
+    order: 2;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+}
+
+.pytanie:has(.audio-pytania) .odpowiedz {
+    padding: 14px 16px;
+    border-radius: 14px;
+    font-size: 16px;
+}
+
+.pytanie:has(.audio-pytania) .odpowiedz:hover {
+    transform: translateY(-2px);
+}
+
+.pytanie:has(.audio-pytania) .odpowiedz.wybrana {
+    box-shadow: 0 0 0 3px color-mix(in srgb, var(--akcent) 28%, transparent);
+}
+
+/* po sprawdzeniu quizu: kolorowa poświata i brak podskakiwania */
+.pytanie:has(.audio-pytania) .odpowiedz.poprawna {
+    box-shadow: 0 0 0 3px color-mix(in srgb, var(--poprawna) 30%, transparent);
+}
+
+.pytanie:has(.audio-pytania) .odpowiedz.zla {
+    box-shadow: 0 0 0 3px color-mix(in srgb, var(--zla) 25%, transparent);
+}
+
+.pytanie:has(.audio-pytania) .odpowiedz.poprawna:hover,
+.pytanie:has(.audio-pytania) .odpowiedz.zla:hover {
+    transform: none;
+}
+
+
+/* ==========================================================
+   Motyw femboy: więcej różu i słodkości
+   ========================================================== */
+
+html[data-theme="femboy"] .pytanie:has(.audio-pytania) {
+    border-left-width: 6px;
+    border-radius: 22px;
+}
+
+html[data-theme="femboy"] .pytanie:has(.audio-pytania):hover {
+    transform: none;
+}
+
+html[data-theme="femboy"] .pytanie:has(.audio-pytania)::after {
+    content: "♡";
+    opacity: 0.12;
+}
+
+html[data-theme="femboy"] .pytanie:has(.audio-pytania) .tresc-pytania::before {
+    content: "🎀";
+}
+
+html[data-theme="femboy"] .audio-pytania {
+    box-shadow: 0 4px 14px rgba(244, 143, 192, 0.45);
+}
+
+html[data-theme="femboy"] .audio-pytania:hover {
+    box-shadow: 0 6px 18px rgba(244, 143, 192, 0.65);
+}
+
+html[data-theme="femboy"] .pytanie:has(.audio-pytania) .odpowiedz {
+    border-radius: 999px;
+    padding-left: 20px;
+}
+
+
+/* ---------- Telefony ---------- */
+
+@media (max-width: 600px) {
+    html .pytanie:has(.audio-pytania) {
+        padding: 18px 16px 20px;
+    }
+
+    .pytanie:has(.audio-pytania)::after {
+        font-size: 52px;
+        right: 12px;
+    }
+
+    .pytanie:has(.audio-pytania) .tresc-pytania {
+        padding-right: 30px;
+        font-size: 17px;
+    }
+
+    .pytanie:has(.audio-pytania) .odpowiedzi {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .audio-pytania,
+    .pytanie:has(.audio-pytania) .odpowiedz {
+        transition: none;
+    }
+
+    .pytanie:has(.audio-pytania) .odpowiedz:hover {
+        transform: none;
+    }
+}
